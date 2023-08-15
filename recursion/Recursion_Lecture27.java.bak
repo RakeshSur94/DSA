@@ -16,7 +16,6 @@ public class Recursion_Lecture27 {
 
     }
 
-//print natural number
     public static void printNaturalNumber(int n) {
         if(n==1){
             System.out.println(1);//base case
@@ -29,7 +28,6 @@ public class Recursion_Lecture27 {
 
 
     }
-	//print factorial
     public static int factorial(int n){
         if(n==0){
             return 1;
@@ -39,7 +37,6 @@ public class Recursion_Lecture27 {
         return ans;
 
     }
-	//fibonacci brute force
     static void fibonacci(int n){
         int a=0;
         int b=1;
@@ -55,7 +52,6 @@ public class Recursion_Lecture27 {
 
 
     }
-	//fibonacci with recursion
     static int nthFibonacci(int n){
         //base case
         if(n==0||n==1) return n;
