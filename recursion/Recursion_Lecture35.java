@@ -12,7 +12,9 @@ public class Recursion_Lecture35 {
         }*/
        // ans.stream().map(ss->ss.toUpperCase()).forEach(System.out::println);
         //print SSQ
-        printSSQ(s,"");
+       // printSSQ(s,"");
+        int arr[]={2,4,5};
+        printSubSetSum(arr,arr.length,0,0);
 
 
     }
@@ -45,6 +47,16 @@ public class Recursion_Lecture35 {
         printSSQ(remString,currAns+currValue);
         printSSQ(remString,currAns);
 
+
+    }
+    public static void printSubSetSum(int arr[],int n,int index,int sum){
+        //base case
+        if(index>=arr.length){
+            System.out.println(sum);
+            return;
+        }
+        printSubSetSum(arr,n,index+1,sum+arr[index]);//include
+        printSubSetSum(arr,n,index+1,sum);//exclude
 
     }
 }
